@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan 7</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+
+        form {
+            width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+        }
+
+        .gender-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 1px;
+        }
+
+        .gender-container input {
+            width: auto;
+        }
+
+        .buttons {
+            margin-top: 15px;
+        }
+
+        .buttons input {
+            width: auto;
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Form Data Mahasiswa</h2>
+
+    <form>
+
+        <label>NPM:</label>
+        <input type="text" name="npm" required>
+
+        <label>Fullname:</label>
+        <input type="text" name="fullname" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="contoh@gmail.com" required>
+
+        <label>Password:</label>
+        <input type="password" name="password" required>
+
+        <label>Place Birth:</label>
+        <input type="text" name="place_birth">
+
+        <label>Birthdate:</label>
+        <input type="date" name="birthdate">
+
+        <label>Gender:</label>
+        <div class="gender-container">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+
+        <label>Address:</label>
+        <textarea name="address" rows="4"></textarea>
+
+        <div class="buttons">
+            <input type="submit" value="Save">
+            <input type="reset" value="Clear">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
